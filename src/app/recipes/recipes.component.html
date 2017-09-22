@@ -1,0 +1,19 @@
+
+
+
+
+<div  class="container">
+   <div class=row> 
+
+     <div class="col-md-5"> 
+     <!--  <app-recipe-list (recipeEmitter) = "setRecipe($event)"></app-recipe-list>  -->
+
+      <app-recipe-list></app-recipe-list> 
+
+     </div>
+     <div class="col-md-7" *ngIf=" hasSelectedRecipe()"> 
+         <app-recipe-detail [selectedRecipe] = "mainRecipe"></app-recipe-detail>
+
+     </div>
+   </div>
+  </div>
